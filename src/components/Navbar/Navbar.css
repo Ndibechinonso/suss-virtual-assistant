@@ -1,0 +1,62 @@
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    width: 100vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0;
+    z-index: 10001;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+
+.navbar a:hover{
+    color: pink
+}
+@media screen and (max-width: 600px) {
+   
+    .navbar{
+    width: 100%;
+    width: 100vw;
+     
+    }
+  }
+  @media screen and (max-width: 560px) {
+   
+    .about{
+display: none;
+    }
+    .logo{
+width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+   
+    .navbar{
+ justify-content: space-between;
+ padding-left: 2%;
+ padding-right: 2%;
+    }
+
+  }
+
+  @media screen and (max-width: 360px) {
+   
+    .logo{
+width: 80px;
+    }
+
+  }

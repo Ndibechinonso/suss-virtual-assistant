@@ -1,0 +1,92 @@
+
+.virtualAssistantLink{
+    padding-top: 130px;
+    padding-left: 130px;
+    z-index: 500;
+    background-image: url('/src/Assets/va-bg.jpg');
+    height: 1250px; 
+}
+.me{
+   width: 100%;
+    height: 1110px;
+  position: absolute;
+  top: 200px;
+    z-index: 900;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding-bottom: 40px;
+    padding-top: 30px;
+   padding-left: 30px;
+}
+.me h2{
+    margin-bottom: 60px;
+    
+}
+.me li{
+    list-style-type: disc;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.me ul{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.brief{
+    font-size: 18px;
+    margin-right: 2%;
+}
+
+@media screen and (max-width:1500px) {
+    .virtualAssistantLink{
+      height: 1400px;
+       
+    }
+    .me{
+        height: 1200px;
+}
+  }
+
+  @media screen and (max-width:650px) {
+    .virtualAssistantLink{
+      height: 1430px;
+       
+    }
+    .me{
+        height: 1230px;
+}
+  }
+
+  @media screen and (max-width:600px) {
+    .virtualAssistantLink{
+      height: 1500px;
+       
+    }
+    .me{
+        height: 1300px;
+}
+  }
+
+  @media screen and (max-width: 500px) {
+    .virtualAssistantLink{
+      height: 1550px;
+       
+    }
+    .me{
+        height: 1350px;
+}
+  }
+
+  @media screen and (max-width: 452px) {
+    .virtualAssistantLink{
+      height: 1600px;
+       
+    }
+    .me{
+        height: 1400px;
+}
+  }
+  @media screen and (max-width: 424px) {
+    .me li{
+        margin-bottom: 5px;
+    }
+  }

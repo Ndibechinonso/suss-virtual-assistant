@@ -1,0 +1,41 @@
+
+.services{
+    background-color: #ffffff;
+    height: 500px;
+    text-align: center;
+    padding: 120px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100vw;
+  
+}
+.services h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.serviceCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+}
+.filler{
+    display: none;
+    height: 500px;
+}
+
+@media screen and (max-width: 750px) {
+    .serviceCards{
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 30px;
+        align-content: center;
+        align-items: center;
+       
+    }
+.filler{
+    display: block;
+}
+    
+  }

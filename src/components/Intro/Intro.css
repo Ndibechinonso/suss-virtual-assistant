@@ -1,0 +1,66 @@
+.intro{
+   position: absolute;
+    height: 100%;
+    top: 70px;
+    z-index: 1000;
+   background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 9%;
+    padding-right: 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.intro h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 55px;
+    
+}
+.intro h1:nth-child(1) {
+    padding-top: 130px;
+}
+
+@media screen and (max-width: 1180px) {
+    .intro h1{
+     font-size: 48px;
+    }
+  }
+  
+  @media screen and (max-width: 965px) {
+    .intro h1{
+        font-size: 38px;
+    }
+  }
+  @media screen and (max-width: 815px) {
+   
+    .intro h1{
+        font-size: 32px;
+        text-align: center;
+     
+    }
+  }
+  @media screen and (max-width: 700px) {
+   
+    .intro h1:nth-child(1) {
+      padding-top: 0;
+  }
+  .intro{
+    position: absolute;
+    top: 20px;
+ 
+  }
+  }
+
+  @media screen and (max-width: 375px) {
+   
+    .intro{
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    }
+  }

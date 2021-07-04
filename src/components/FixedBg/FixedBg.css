@@ -1,0 +1,17 @@
+.fixedBg{
+ 
+  position: sticky;
+    /* background-image: url('../../Assets/virtual-ass.jpg'); */
+
+    height: 100vh;
+   
+    z-index: -5;
+    top:0;
+  left:0;
+  
+}
+img{
+  position: fixed;
+  object-fit: fill;
+  width: 100%;
+}
