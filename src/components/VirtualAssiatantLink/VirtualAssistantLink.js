@@ -11,7 +11,7 @@ const VirtualAssistantLink = (props) => {
     <h2>Virtual Services Provided:</h2>
       <div className="brief">
         Are you a small business owner or entrepreneur trying to find more time
-        in your day. Let me focus on the small tasks so you can focus on the big
+        in your day? Let me focus on the small tasks so you can focus on the big
         ones. I benefit companies looking for a reliable and knowledgable
         resource for their business needs. You can also book a free consultation to better advise what plan would suit your needs.
       </div>

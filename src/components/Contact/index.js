@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Contact.css'
 import { useFormik } from 'formik';
 import * as Yup from 'yup'
 import axios from 'axios'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function Contact(props) {
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        })
+    })
 
     const [isSubmitted, setIsSubmitted] = useState(false)
 
@@ -47,7 +54,7 @@ export default function Contact(props) {
             <div >
                 <form onSubmit={handleSubmit}>
                     <div className='centerDiv'> <h2>CONTACT</h2></div>
-                    <h5> Hi there. How Can I help you excel in your business?</h5>
+                    <h5 data-aos="fade-right"> Hi there. How Can I help you excel in your business?</h5>
                     <div className='inputDiv'>
                         <div data-aos="flip-left">   <div className='inputGroup'>
                             {errors.name ? <div className='error'>{errors.name}</div> : null}

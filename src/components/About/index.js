@@ -1,9 +1,20 @@
+import React, {useEffect} from "react";
 import "./About.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function About(props) {
+
+  useEffect(() => {
+    AOS.init({
+        duration: 1000
+    })
+})
+
   return (
     <section id="about">
-      <div className="aboutContainer">
+      <div className="aboutContainer" data-aos="fade-up">
         <h2>ABOUT </h2>
         <p>
           I am a Virtual Assitant specializing in Administrative and Human Resource Management, and I am passionate about creating seamless solutions to the business I support.        </p>
@@ -13,7 +24,7 @@ export default function About(props) {
         </p>
       </div>
 
-      <div className="cv">
+      <div className="cv" data-aos="fade-right">
         <div className="bigAbout">
           Do what you do BEST and DELEGATE the rest.
         </div>
