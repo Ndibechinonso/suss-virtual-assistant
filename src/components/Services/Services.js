@@ -11,7 +11,7 @@ const Services = () => {
         Are you a small business owner or entrepreneur trying to find more time
         in your day. Let me focus on the small tasks so you can focus on the big
         ones. I benefit companies looking for a reliable and knowledgable
-        resource for their business neeeds.
+        resource for their business needs.
       </div>
       <div className="serviceCards">
     
@@ -21,7 +21,7 @@ const Services = () => {
       />
       <Card
         header="HUMAN RESOURCES MANAGEMENT"
-        text="Documents everywhere? Are you constantly handling the same papers over and over again. I help create and manage systems so you can focus on sales and drive revenue. Reduce lost and misfiled documents."
+        text="I help manage people effectively in an organization and also help to design policies to maximize employee performance in service of an employer's strategic objectives ."
       />
       </div>
 
