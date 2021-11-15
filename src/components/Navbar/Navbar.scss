@@ -1,0 +1,157 @@
+.navbar {
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  /* display: flex;
+    flex-direction: row; */
+  /* justify-content: space-around; */
+  background-color: white;
+  width: 100vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  margin-top: 0;
+  z-index: 10001;
+}
+
+.desktop-links {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 16px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.selectedLink{
+    color: red; 
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 28px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo {
+    span {
+      position: relative;
+      color: rgba(#000, .2);
+      animation: logo-parent 5s infinite;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: attr(data-text);
+        color: #fff;
+        opacity: 0;
+        animation: logo-child 5s infinite;
+      }
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i+1})::after {
+          animation-delay: #{$i*.2}s;
+        }
+      }
+    }
+  }
+  
+  @keyframes logo-parent {
+    0%, 35%, 100% {
+      color: pink;
+    }
+    60%, 80% {
+      color: #212121;
+    }
+  }
+  @keyframes logo-child {
+    0% {
+      opacity: 1;
+    }
+    25%, 100% {
+      opacity: 0;
+    }
+  }
+
+
+.navbar .links a:hover {
+  color: pink;
+}
+
+.hamburger-div {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar{
+    padding-right: 20px;
+  }
+  .desktop-links {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: flex-end;
+  }
+  .eMMMxV{
+    z-index: 10000;
+  }
+
+  .mobile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  .mobile-links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+}
+
+/* @media screen and (max-width: 600px) {
+   
+    .navbar{
+    width: 100%;
+    width: 100vw;
+     
+    }
+  }
+  @media screen and (max-width: 560px) {
+   
+    .about{
+display: none;
+    }
+    .logo{
+width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+   
+    .navbar{
+ justify-content: space-between;
+ padding-left: 2%;
+ padding-right: 2%;
+    }
+
+  }
+
+  @media screen and (max-width: 360px) {
+   
+    .logo{
+width: 80px;
+    }
+
+  } */

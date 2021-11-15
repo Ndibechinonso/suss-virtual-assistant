@@ -1,20 +1,17 @@
 import React from "react";
 import "./VirtualAssistantLink.css";
 
-
 const VirtualAssistantLink = (props) => {
   return (
-    <div>
-    <div className="virtualAssistantLink">
-    </div>
-    <div className='me'>
-    <h2>Virtual Services Provided:</h2>
+    <div className='virtualAssistantLink'>
+    
       <div className="brief">
         Are you a small business owner or entrepreneur trying to find more time
         in your day? Let me focus on the small tasks so you can focus on the big
         ones. I benefit companies looking for a reliable and knowledgable
         resource for their business needs. You can also book a free consultation to better advise what plan would suit your needs.
       </div>
+      <h2>Virtual Services Provided:</h2>
       <ul>
         <li>Job posting</li>
         <li>Recruiting</li>
@@ -48,11 +45,9 @@ const VirtualAssistantLink = (props) => {
         <li>Calendar management.</li>
         <li>Document and Database Management </li>
       </ul>
-      <h2>Don't forget you can always book for a free consultation.</h2>
+      <h2 class=''>Don't forget you can always book for a free consultation.</h2>
       </div>
-      
-    </div>
-  );
+        );
 };
 
 export default VirtualAssistantLink;

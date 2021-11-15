@@ -11,7 +11,6 @@
 }
 .services h2{
     font-size: 45px;
-    font-weight: 700;
 }
 .serviceCards{
     display: flex;
@@ -38,4 +37,17 @@
     display: block;
 }
     
+  }
+
+  @media screen and (max-width: 1180px) {
+
+    .services h2{
+        font-size: 38px;
+    }
+  }
+  
+  @media screen and (max-width: 965px) {
+    .services h2{
+        font-size: 28px;
+    }
   }
