@@ -42,7 +42,6 @@ const VirtualAssistantLink = (props) => {
         </li>
         <li>Dairy Management - Arranging and setting up meetings</li>
         <li>Calendar management.</li>
-        <li>Calendar management.</li>
         <li>Document and Database Management </li>
       </ul>
       <h2 class=''>Don't forget you can always book for a free consultation.</h2>
